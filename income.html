@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <title>Somthin'</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="MainScreen">
+    <div class="Score">
+      <div class="topScore">
+        <div class="energy">
+          <img src="images/energy.svg">
+          <div id="energyBox">
+            <div id="energyfill"></div>  
+            <span id="energyText">500</span>
+          </div>
+          </div>
+        <div class="tickets">
+          <img src="images/ticket.svg">
+          <div id="Ticketbox">
+            <div id="ticketFill"></div>
+            <span id="TicketText">1</span>
+        </div>
+      </div>
+      </div>
+      <div class="centerScore">
+        
+        <img src="images/бета-валюта.svg">
+        <span id="souls">0</span>
+      </div>
+      <div class="BottomScore">
+      <p> + <span id="InHour">0</span>в час</p>
+     </div>
+    </div>
+    <div class="cardsPanel">
+      <div class="upgrade">
+        <p>Прокачайся</p>
+        <div class="cardsUpgr">
+          <div class="card" id="ClLvlEn">
+            <div class="imgCard">
+              <p>ур. <span id="lvlEnergy">0</span> +<span id="CountEnergy">100</span> ⚡</p>
+            </div>
+            <p>Запас Энергии</p>
+            <button id="paylvlEnergy"><p>Купить за <span id="pricelvlEnergy">100</span></p></button>
+          </div>
+          <div class="card" id="ClLvl">
+            <div class="imgCard">
+              <p>
+                ур. <span id="lvlMulti">0</span>
+                <span id="CountMulti">1</span> 🦾
+              </p>
+            </div>
+            <p>МультиХит</p>
+            <button id="paylvlMulti">
+              <p>Купить за <span id="pricelvlMulti">300</span></p>
+            </button>
+          </div>
+          <div class="card" id="clickLvlRestart">
+           <div class="imgCard">
+            <p><span id="lvlContainer">0</span> / 6 </p>
+          </div>
+          <p>Пополнение Энергии</p>
+          <button id="paylvlContainer">
+            <p>Бесплатно</p>
+          </button>
+        </div>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="passive"></div>
+    </div>
+    <div class="controls">
+      <a href="index.html" class="hrefControl">
+        <div class="ButtonControl">
+          <img src="images/icons8-джойстик-48.png" alt="">
+          <p>Игратb</p>
+        </div>
+      </a>
+      <a href="#" class="hrefControl">
+        <div class="ButtonControl">
+          <img src="images/icons8-кошелек-100.png" alt="">
+          <p>3арАбоtок</p>
+        </div>
+      </a>
+      <a href="command.html" class="hrefControl">
+        <div class="ButtonControl">
+          <img src="images/icons8-политика-конфиденциальности-64.png" alt="">
+          <p>cвя3b</p>
+        </div>
+      </a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
