@@ -1,0 +1,277 @@
+.LoadingScreen {
+	background-color: rgba(90, 219, 165, 0.767);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: blue;
+	font-size: 56px;
+	font-style: italic;
+	font-weight: 200;
+	animation: TextJump 5s forwards;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+@keyframes TextJump {
+	0% {
+		color: blue;
+		font-size: 56px;
+		display: flex;
+	}
+	25% {
+		color: rgb(40, 194, 255);
+		font-size: 42px;
+		display: flex;
+	}
+	50% {
+		color: blue;
+		font-size: 56px;
+	}
+	75% {
+		color: rgb(40, 194, 255);
+		font-size: 42px;
+		display: flex;
+	}
+	100% {
+		color: blue;
+		font-size: 56px;
+		display: none;
+	}
+}
+.MainScreen {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 20% 68% 12%;
+}
+/*.Score{
+  box-shadow: inset 0 0 10px 4px rgb(144, 69, 173);
+}
+.object{
+  box-shadow: inset 0 0 10px 4px rgb(255, 59, 59);
+}
+.controls{
+  box-shadow: inset 0 0 10px 4px rgb(145, 255, 0);
+}*/
+.controls {
+	display: flex;
+	justify-content: space-around;
+}
+.hrefControl {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.ButtonControl {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: rgb(1, 107, 1);
+}
+.ButtonControl img {
+	width: 75%;
+}
+.command {
+	padding: 40px;
+	text-align: center;
+	h2,
+	p,
+	h1 {
+		margin-bottom: 30px;
+	}
+	background-color: rgb(247, 215, 174);
+}
+.object {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 90%;
+	}
+}
+
+.topScore {
+	height: 60%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.energy,
+.tickets {
+	height: 30%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	img {
+		width: 50px;
+		position: relative;
+		left: 20%;
+		z-index: 3;
+	}
+	#energyBox,
+	#Ticketbox {
+		width: 100px;
+		height: 24px;
+		background-color: rgb(50, 50, 119);
+		border-radius: 8px;
+		color: rgb(227, 225, 255);
+		font-size: 13px;
+		font-weight: 300px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+}
+#energyfill {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background: linear-gradient(90deg, blue 0%, purple 100%);
+}
+#ticketFill {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background: linear-gradient(90deg, rgb(116, 0, 0) 0%, rgb(255, 0, 0) 5%);
+}
+#energyText,
+#TicketText {
+	z-index: 2;
+}
+.centerScore {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 50px;
+	}
+	font-size: 50px;
+	font-weight: 800;
+}
+
+.upgrade {
+	padding: 20px;
+}
+
+.BottomScore {
+	text-align: center;
+	color: crimson;
+	font-weight: 600;
+	font-size: 38px;
+}
+
+.cardsUpgr {
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	width: 30%;
+	height: 200px;
+	background-color: chocolate;
+	border-radius: 10px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.imgCard {
+	width: 100%;
+	height: 100px;
+	border-radius: 10px;
+	p {
+		background-color: whitesmoke;
+		text-align: center;
+	}
+}
+.card:nth-child(1) .imgCard {
+	background-image: url(images/макс\энергия_Монтажная\ область\ 1.png);
+	background-size: cover;
+}
+
+.cardsPassive {
+	width: 28vw;
+	display: inline-block;
+}
+
+.containerCardsPassive {
+	white-space: nowrap;
+	overflow-x: auto;
+	width: calc(100vw - 40px);
+}
+.containerCardsPassive::-webkit-scrollbar {
+	display: none;
+}
+.dialog {
+	position: fixed;
+	inset: auto 0 0 0;
+	width: 100%;
+	height: 70vh;
+	border-radius: 12px 12px 0 0;
+	padding: 20px;
+}
+form {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.picture {
+	width: 100%;
+	border-radius: 12px;
+}
+::backdrop {
+	background: rgba(50, 50, 119, 0.288);
+}
+.close {
+	align-self: flex-end;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	border-radius: 50px;
+	border: 0;
+	font-size: 16px;
+	background-color: brown;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.textContainer {
+	font-size: 40px;
+	background-color: rgb(228, 144, 144);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.payLvlCardPassive {
+	align-self: flex-end;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	border-radius: 30px;
+	border: 0px;
+	font-size: 16px;
+	background-color: rgb(36, 202, 139);
+
+	font-weight: 600;
+}
+
+.card2 {
+	height: 80%;
+}
